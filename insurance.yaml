@@ -5,7 +5,7 @@ metadata:
   labels:
     app: insurance-policy
 spec:
-  replicas: 2
+  replicas:4 
   selector:
     matchLabels:
       app: insurance-policy
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: insurance-policy-container
-          image: shubhamkushwah123/insure-me:3.0  # Match with your Jenkins Docker tag
+          image: akhilsru3/insure-me:3.0 
           ports:
             - containerPort: 8080
           env:
